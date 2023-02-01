@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'enunciado');
 
-
-Auth::routes();
+Route::get('/admin',[App\Http\Controllers\DriverController::class, 'mostrar'])->name('mostrardrivers');
+//Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
