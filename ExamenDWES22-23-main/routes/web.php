@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TripController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,5 @@ Route::get('/admin',[App\Http\Controllers\DriverController::class, 'mostrar'])->
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/viaje/mostrarviaje', [TripController::class, 'mostrar'])->name('mostrarviajes');
+Route::post('viaje/guardarviaje/{id}', [TripController::class, 'guardar'])->name('guardarviaje');

@@ -62,7 +62,9 @@
           </div>
 
           <div class="links">
+            @if(auth()->user())
               <a href="{{route('mostrardrivers')}}">@lang('messages.administration')</a>
+            @endif
               <a href="#">@lang('messages.trip_driver')</a>
               <a href="/">@lang('messages.future_trips')</a>
               <a href="/">@lang('messages.middleware')</a>
