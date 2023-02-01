@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Driver extends Model
 {
     use HasFactory;
+
+    public function trip()
+    {
+        return $this->belongsTo('App\Models\Trip');
+    }
 }
