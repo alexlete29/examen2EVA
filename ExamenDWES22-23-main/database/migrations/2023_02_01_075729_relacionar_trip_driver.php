@@ -15,7 +15,7 @@ class RelacionarTripDriver extends Migration
     {
         Schema::table('drivers', function (Blueprint $table) {
             $table->unsignedBigInteger('trip_id');
-            $table->foreign('trip_id')->references('id')->on('trips');
+            $table->foreign('trip_id')->references('id')->on('trips')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
