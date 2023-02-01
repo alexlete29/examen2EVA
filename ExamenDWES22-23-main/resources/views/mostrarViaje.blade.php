@@ -19,7 +19,7 @@
             <td>{{$viaje->destino}}</td>
             <td>{{$viaje->fecha}}</td>
             <td>
-                <form method="post" ="{{'guardarviaje'.$viaje->id}}">
+                <form method="post" action="{{'guardarviaje'.$viaje->id}}">
                     <input type="text" placeholder="Introduce las plazas a reservar">
                     <input type="submit" value="Reservar">
                 </form> 
