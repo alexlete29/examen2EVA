@@ -62,7 +62,7 @@
           </div>
 
           <div class="links">
-              <a href="#">@lang('messages.administration')</a>
+              <a href="{{route('mostrardrivers')}}">@lang('messages.administration')</a>
               <a href="#">@lang('messages.trip_driver')</a>
               <a href="/">@lang('messages.future_trips')</a>
               <a href="/">@lang('messages.middleware')</a>
